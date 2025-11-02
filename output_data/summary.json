@@ -1,0 +1,25 @@
+{
+    "rows": 10000,
+    "columns": 6,
+    "missing_values": {
+        "UserID": 0,
+        "LoginTime": 0,
+        "LoginLatitude": 0,
+        "LoginLongitude": 0,
+        "ActualLatitude": 0,
+        "ActualLongitude": 0
+    },
+    "numeric_summary": {
+        "UserID": {
+            "count": 10000.0,
+            "mean": 497.7447,
+            "min": 1.0,
+            "25%": 252.0,
+            "50%": 494.0,
+            "75%": 746.0,
+            "max": 1000.0,
+            "std": 286.9585246013684
+        },
+        "LoginTime": {
+            "count": 10000,
+            "mean": 
