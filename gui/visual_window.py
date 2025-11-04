@@ -3,29 +3,39 @@ from tkinter import ttk, messagebox
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
 import pandas as pd
-import subprocess, json, os
+import subprocess, os
 from datetime import datetime
+from modules.analytics_engine import AnalyticsEngine
+from modules.logger import AppLogger
+from modules.data_processor import DataProcessor
 
 # ============================================================
 #  Function: Query local Ollama model (.gguf)
 # ============================================================
-def analyze_with_ollama(prompt, model="phi3"):
+def analyze_with_ollama(prompt, model="gemma3:4b"):
+    """
+    Runs a local Ollama model and captures plain text output safely.
+    Compatible with models that don't support --format json.
+    """
     try:
         print(f"🔹 Using local model: {model}")
         result = subprocess.run(
-            ["ollama", "run", model, "--format", "json", prompt],
-            capture_output=True, text=True
+            ["ollama", "run", model, prompt],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="ignore",
+            timeout=120
         )
 
-        response_text = ""
-        for line in result.stdout.splitlines():
-            try:
-                data = json.loads(line)
-                response_text += data.get("response", "")
-            except:
-                pass
+        response_text = result.stdout.strip()
+        if not response_text:
+            response_text = "⚠️ No response received from the local model."
 
-        return response_text.strip()
+        return response_text
+
+    except subprocess.TimeoutExpired:
+        return "⚠️ Ollama model timed out (no response within 60 seconds)."
     except Exception as e:
         return f"❌ Ollama error: {e}"
 
@@ -41,8 +51,8 @@ class VisualizationWindow:
         self.master.geometry("900x700")
         self.master.configure(bg="#121212")
 
-        # ensure output folder exists
         os.makedirs("output", exist_ok=True)
+        os.makedirs("logs", exist_ok=True)
 
         style = ttk.Style()
         style.configure("TButton", font=("Segoe UI", 11), padding=8)
@@ -54,8 +64,9 @@ class VisualizationWindow:
         btn_frame = tk.Frame(master, bg="#121212")
         btn_frame.pack(pady=10)
 
-        ttk.Button(btn_frame, text="Visual by Engine", command=self.visual_by_engine).grid(row=0, column=0, padx=15)
-        ttk.Button(btn_frame, text="Visual by User", command=self.visual_by_user).grid(row=0, column=1, padx=15)
+        ttk.Button(btn_frame, text="By Engine (LLM)", command=self.visual_by_engine).grid(row=0, column=0, padx=15)
+        ttk.Button(btn_frame, text="By Engine (Analytical)", command=self.visual_by_analytical).grid(row=0, column=1, padx=15)
+        ttk.Button(btn_frame, text="By User", command=self.visual_by_user).grid(row=0, column=2, padx=15)
 
         self.output_text = tk.Text(master, wrap="word", height=20, bg="#1E1E1E", fg="white", font=("Consolas", 10))
         self.output_text.pack(padx=15, pady=20, fill="both", expand=True)
@@ -82,10 +93,7 @@ class VisualizationWindow:
             self.output_text.delete(1.0, tk.END)
             self.output_text.insert(tk.END, "🤖 Analyzing dataset with local AI model... please wait...\n\n")
 
-            output = analyze_with_ollama(prompt, model="phi3")
-
-            if not output.strip():
-                output = "⚠️ No response received from the local model."
+            output = analyze_with_ollama(prompt, model="gemma3:4b")
 
             self.output_text.insert(tk.END, output)
             print("\n=== AI Visualization Suggestions ===\n", output)
@@ -144,13 +152,11 @@ class VisualizationWindow:
                 ax.set_title(f"{plot.title()} Chart of {x} vs {y if y else ''}")
                 plt.tight_layout()
 
-                # Save the chart automatically to output folder
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                 filename = f"output/chart_{plot}_{timestamp}.png"
                 fig.savefig(filename)
                 print(f"✅ Chart saved: {filename}")
 
-                # Display chart in new window
                 chart_win = tk.Toplevel(win)
                 chart_win.title("Chart")
                 chart_win.geometry("700x600")
@@ -165,6 +171,41 @@ class VisualizationWindow:
                 messagebox.showerror("Error", f"Plot failed:\n{e}")
 
         ttk.Button(win, text="Create Plot", command=create_plot).pack(pady=15)
+
+    # ============================================================
+    #  ANALYTICAL ENGINE VISUALIZATION (auto generate & log)
+    # ============================================================
+    def visual_by_analytical(self):
+        try:
+            logger = AppLogger("logs/error_log.txt")
+            analytics = AnalyticsEngine()
+            processor = DataProcessor()
+
+            self.output_text.delete(1.0, tk.END)
+            self.output_text.insert(tk.END, "🧠 Analytical Engine — Generating Visualizations...\n\n")
+
+            analysis_info = processor.analyze_columns(self.df)
+            generated_files = analytics.generate_and_save_charts(self.df, analysis_info)
+
+            log_text = "=== Analytical Engine Suggestions ===\n"
+            if generated_files:
+                for path in generated_files:
+                    self.output_text.insert(tk.END, f"✅ Saved: {path}\n")
+                    log_text += f"✅ Saved: {path}\n"
+            else:
+                msg = "⚠️ No charts generated.\n"
+                self.output_text.insert(tk.END, msg)
+                log_text += msg
+
+            # ✅ Save all results in engine_suggestions.txt
+            with open("logs/engine_suggestions.txt", "a", encoding="utf-8") as f:
+                f.write("\n" + log_text + "\n")
+
+            logger.log_info("visual_by_analytical", f"{len(generated_files)} charts logged successfully.")
+
+        except Exception as e:
+            messagebox.showerror("Error", f"Analytical engine failed:\n{e}")
+            logger.log_error("visual_by_analytical", str(e))
 
 
 # ============================================================

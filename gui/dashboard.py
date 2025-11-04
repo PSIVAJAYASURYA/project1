@@ -1,11 +1,14 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk, scrolledtext
 import os
+import json
+import pandas as pd
 from modules.file_handler import FileHandler
 from modules.data_processor import DataProcessor
 from modules.analytics_engine import AnalyticsEngine
 from modules.visualizer import Visualizer
 from modules.report_generator import ReportGenerator
+from modules.logger import AppLogger
 
 
 class StyledButton(tk.Button):
@@ -28,18 +31,24 @@ class Dashboard:
         self.root.geometry("1380x850")
         self.root.configure(bg="#121212")
 
+        # Initialize modules
         self.file_handler = FileHandler()
         self.data_processor = DataProcessor()
         self.analytics = AnalyticsEngine()
         self.visualizer = Visualizer()
         self.reporter = ReportGenerator()
+        self.logger = AppLogger("logs/error_log.txt")
 
+        # Data states
         self.df = None
         self.analysis_info = {}
         self.is_cleaned = False
 
         self.build_main_screen()
 
+    # ============================================================
+    #  MAIN UI LAYOUT
+    # ============================================================
     def build_main_screen(self):
         title = tk.Label(
             self.root, text="DATA INSIGHTS AUTOMATION DASHBOARD",
@@ -56,11 +65,10 @@ class Dashboard:
         StyledButton(button_frame, "Report", self.generate_report, color="#8E24AA").pack(side="left", padx=15)
 
         ttk.Separator(self.root, orient="horizontal").pack(fill="x", pady=25)
-
         StyledButton(self.root, "Column Analysis", self.show_column_analysis, color="#00ACC1").pack(pady=(10, 15))
 
+        # Column Analysis Frame
         self.analysis_frame = tk.Frame(self.root, bg="#1E1E1E", bd=1, relief="solid")
-        self.analysis_frame.pack(fill="both", expand=True, padx=60, pady=20)
         self.analysis_frame.pack_forget()
 
         tk.Label(self.analysis_frame, text="COLUMN ANALYSIS",
@@ -79,6 +87,9 @@ class Dashboard:
         )
         footer.pack(side="bottom", pady=10)
 
+    # ============================================================
+    #  FILE UPLOAD
+    # ============================================================
     def upload_file(self):
         filepath = filedialog.askopenfilename(
             title="Select data file",
@@ -96,6 +107,9 @@ class Dashboard:
             else:
                 messagebox.showerror("Error", "Failed to load file. Please check your input.")
 
+    # ============================================================
+    #  DATA CLEANING
+    # ============================================================
     def data_clean(self):
         if self.df is None:
             messagebox.showwarning("Warning", "Please upload a file first.")
@@ -105,6 +119,9 @@ class Dashboard:
         self.analysis_info = self.data_processor.analyze_columns(self.df)
         messagebox.showinfo("Data Cleaned", "Data cleaned successfully. You can now visualize or analyze.")
 
+    # ============================================================
+    #  OPEN VISUALIZATION WINDOW
+    # ============================================================
     def open_visual_window(self):
         if self.df is None:
             messagebox.showwarning("Warning", "Please upload a file first.")
@@ -115,18 +132,52 @@ class Dashboard:
         from gui.visual_window import VisualizationWindow
         VisualizationWindow(self.root, self.df)
 
+    # ============================================================
+    #  GENERATE JSON REPORT
+    # ============================================================
     def generate_report(self):
-        if self.df is None:
-            messagebox.showwarning("Warning", "Please upload a file first.")
-            return
-        if not self.is_cleaned:
-            messagebox.showwarning("Please clean first", "Clean data before generating reports.")
-            return
-        summary = self.analytics.summarize(self.df)
-        excel = self.reporter.export_to_excel(self.df)
-        jsn = self.reporter.export_to_json(summary)
-        messagebox.showinfo("Report Generated", f"Reports saved to:\n{excel}\n{jsn}")
+        try:
+            if self.df is None:
+                messagebox.showwarning("Warning", "Please upload a file first.")
+                return
+            if not self.is_cleaned:
+                messagebox.showwarning("Please clean first", "Clean data before generating reports.")
+                return
 
+            # ✅ Only numeric columns
+            numeric_df = self.df.select_dtypes(include="number")
+            if numeric_df.empty:
+                messagebox.showinfo("No Numeric Data", "No numeric columns found for reporting.")
+                return
+
+            # ✅ Calculate summary stats
+            summary = {}
+            for col in numeric_df.columns:
+                summary[col] = {
+                    "mean": float(numeric_df[col].mean()),
+                    "median": float(numeric_df[col].median()),
+                    "min": float(numeric_df[col].min()),
+                    "max": float(numeric_df[col].max()),
+                    "std_dev": float(numeric_df[col].std()),
+                    "missing_values": int(numeric_df[col].isna().sum())
+                }
+
+            # ✅ Save JSON report
+            os.makedirs("output", exist_ok=True)
+            report_path = os.path.join("output", "numeric_report.json")
+            with open(report_path, "w", encoding="utf-8") as f:
+                json.dump(summary, f, indent=4)
+
+            self.logger.log_info("Dashboard.generate_report", f"Report saved at {report_path}")
+            messagebox.showinfo("Report Generated", f"✅ Numeric summary report saved to:\n{report_path}")
+
+        except Exception as e:
+            self.logger.log_error("Dashboard.generate_report", str(e))
+            messagebox.showerror("Error", f"Report generation failed:\n{e}")
+
+    # ============================================================
+    #  COLUMN ANALYSIS DISPLAY
+    # ============================================================
     def show_column_analysis(self):
         if not self.is_cleaned:
             messagebox.showwarning("Warning", "Please clean data first to analyze columns.")
@@ -144,3 +195,7 @@ class Dashboard:
 
     def run(self):
         self.root.mainloop()
+
+
+if __name__ == "__main__":
+    Dashboard().run()

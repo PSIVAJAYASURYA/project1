@@ -3,3 +3,283 @@
 [2025-11-01 17:20:37.635810] ReportGenerator.export_to_json: Object of type Timestamp is not JSON serializable
 [2025-11-01 17:25:48.825028] ReportGenerator.export_to_json: Object of type Timestamp is not JSON serializable
 [2025-11-01 18:02:51.513398] ReportGenerator.export_to_json: Object of type Timestamp is not JSON serializable
+[2025-11-02 23:16:56] [ERROR] [AnalyticsEngine.suggest_charts] 'int' object is not subscriptable
+[2025-11-02 23:17:47] [ERROR] [AnalyticsEngine.suggest_charts] 'int' object is not subscriptable
+[2025-11-02 23:23:51] [ERROR] [AnalyticsEngine.suggest_charts] 'int' object is not subscriptable
+[2025-11-02 23:25:54] [INFO] [Column 'Step No': mean=2.10, std=1.03, min=1.0, max=4.0, median=2.00] DataProcessor.clean_data.stats
+[2025-11-02 23:25:54] [INFO] [Column 'Unnamed: 8': mean=nan, std=nan, min=nan, max=nan, median=nan] DataProcessor.clean_data.stats
+[2025-11-02 23:25:54] [INFO] [Column 'Test Case#': top='TC_01', frequency=47] DataProcessor.clean_data.stats
+[2025-11-02 23:25:54] [INFO] [Column 'Test Title': top='Test Title', frequency=46] DataProcessor.clean_data.stats
+[2025-11-02 23:25:54] [INFO] [Column 'Test Summary': top='Verify that the system shows an error message when the employee name is empty
+
+Precondition:
+1. User should have Application URL
+2. User should have valid login credentials
+3.User should be in Add Employee field', frequency=55] DataProcessor.clean_data.stats
+[2025-11-02 23:25:54] [INFO] [Column 'Test Steps': top='Open the browser, click on the URL', frequency=37] DataProcessor.clean_data.stats
+[2025-11-02 23:25:54] [INFO] [Column 'Test Data': top='Test Data', frequency=62] DataProcessor.clean_data.stats
+[2025-11-02 23:25:54] [INFO] [Column 'Expected Result': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=22] DataProcessor.clean_data.stats
+[2025-11-02 23:25:54] [INFO] [Column 'Unnamed: 7': top='Open the browser, click on the URL', frequency=51] DataProcessor.clean_data.stats
+[2025-11-02 23:25:54] [INFO] [Column 'Unnamed: 9': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=60] DataProcessor.clean_data.stats
+[2025-11-02 23:25:54] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-02 23:25:54] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-02 23:25:54] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-02 23:35:46] [INFO] [Column 'Step No': mean=2.10, std=1.03, min=1.0, max=4.0, median=2.00] DataProcessor.clean_data.stats
+[2025-11-02 23:35:46] [INFO] [Column 'Unnamed: 8': mean=nan, std=nan, min=nan, max=nan, median=nan] DataProcessor.clean_data.stats
+[2025-11-02 23:35:46] [INFO] [Column 'Test Case#': top='TC_01', frequency=47] DataProcessor.clean_data.stats
+[2025-11-02 23:35:46] [INFO] [Column 'Test Title': top='Test Title', frequency=46] DataProcessor.clean_data.stats
+[2025-11-02 23:35:46] [INFO] [Column 'Test Summary': top='Verify that the system shows an error message when the employee name is empty
+
+Precondition:
+1. User should have Application URL
+2. User should have valid login credentials
+3.User should be in Add Employee field', frequency=55] DataProcessor.clean_data.stats
+[2025-11-02 23:35:46] [INFO] [Column 'Test Steps': top='Open the browser, click on the URL', frequency=37] DataProcessor.clean_data.stats
+[2025-11-02 23:35:46] [INFO] [Column 'Test Data': top='Test Data', frequency=62] DataProcessor.clean_data.stats
+[2025-11-02 23:35:46] [INFO] [Column 'Expected Result': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=22] DataProcessor.clean_data.stats
+[2025-11-02 23:35:46] [INFO] [Column 'Unnamed: 7': top='Open the browser, click on the URL', frequency=51] DataProcessor.clean_data.stats
+[2025-11-02 23:35:46] [INFO] [Column 'Unnamed: 9': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=60] DataProcessor.clean_data.stats
+[2025-11-02 23:35:46] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-02 23:35:46] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-02 23:35:46] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-03 10:12:35] [INFO] [Column 'Step No': mean=2.10, std=1.03, min=1.0, max=4.0, median=2.00] DataProcessor.clean_data.stats
+[2025-11-03 10:12:35] [INFO] [Column 'Unnamed: 8': mean=nan, std=nan, min=nan, max=nan, median=nan] DataProcessor.clean_data.stats
+[2025-11-03 10:12:35] [INFO] [Column 'Test Case#': top='TC_01', frequency=47] DataProcessor.clean_data.stats
+[2025-11-03 10:12:35] [INFO] [Column 'Test Title': top='Test Title', frequency=46] DataProcessor.clean_data.stats
+[2025-11-03 10:12:35] [INFO] [Column 'Test Summary': top='Verify that the system shows an error message when the employee name is empty
+
+Precondition:
+1. User should have Application URL
+2. User should have valid login credentials
+3.User should be in Add Employee field', frequency=55] DataProcessor.clean_data.stats
+[2025-11-03 10:12:35] [INFO] [Column 'Test Steps': top='Open the browser, click on the URL', frequency=37] DataProcessor.clean_data.stats
+[2025-11-03 10:12:35] [INFO] [Column 'Test Data': top='Test Data', frequency=62] DataProcessor.clean_data.stats
+[2025-11-03 10:12:35] [INFO] [Column 'Expected Result': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=22] DataProcessor.clean_data.stats
+[2025-11-03 10:12:35] [INFO] [Column 'Unnamed: 7': top='Open the browser, click on the URL', frequency=51] DataProcessor.clean_data.stats
+[2025-11-03 10:12:35] [INFO] [Column 'Unnamed: 9': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=60] DataProcessor.clean_data.stats
+[2025-11-03 10:12:35] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-03 10:12:35] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-03 10:12:35] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-03 10:28:59] [INFO] [Column 'Step No': mean=2.10, std=1.03, min=1.0, max=4.0, median=2.00] DataProcessor.clean_data.stats
+[2025-11-03 10:28:59] [INFO] [Column 'Unnamed: 8': mean=nan, std=nan, min=nan, max=nan, median=nan] DataProcessor.clean_data.stats
+[2025-11-03 10:28:59] [INFO] [Column 'Test Case#': top='TC_01', frequency=47] DataProcessor.clean_data.stats
+[2025-11-03 10:28:59] [INFO] [Column 'Test Title': top='Test Title', frequency=46] DataProcessor.clean_data.stats
+[2025-11-03 10:28:59] [INFO] [Column 'Test Summary': top='Verify that the system shows an error message when the employee name is empty
+
+Precondition:
+1. User should have Application URL
+2. User should have valid login credentials
+3.User should be in Add Employee field', frequency=55] DataProcessor.clean_data.stats
+[2025-11-03 10:28:59] [INFO] [Column 'Test Steps': top='Open the browser, click on the URL', frequency=37] DataProcessor.clean_data.stats
+[2025-11-03 10:28:59] [INFO] [Column 'Test Data': top='Test Data', frequency=62] DataProcessor.clean_data.stats
+[2025-11-03 10:28:59] [INFO] [Column 'Expected Result': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=22] DataProcessor.clean_data.stats
+[2025-11-03 10:28:59] [INFO] [Column 'Unnamed: 7': top='Open the browser, click on the URL', frequency=51] DataProcessor.clean_data.stats
+[2025-11-03 10:28:59] [INFO] [Column 'Unnamed: 9': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=60] DataProcessor.clean_data.stats
+[2025-11-03 10:28:59] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-03 10:28:59] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-03 10:28:59] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-03 11:49:45] [INFO] [Column 'Step No': mean=2.10, std=1.03, min=1.0, max=4.0, median=2.00] DataProcessor.clean_data.stats
+[2025-11-03 11:49:45] [INFO] [Column 'Unnamed: 8': mean=nan, std=nan, min=nan, max=nan, median=nan] DataProcessor.clean_data.stats
+[2025-11-03 11:49:45] [INFO] [Column 'Test Case#': top='TC_01', frequency=47] DataProcessor.clean_data.stats
+[2025-11-03 11:49:45] [INFO] [Column 'Test Title': top='Test Title', frequency=46] DataProcessor.clean_data.stats
+[2025-11-03 11:49:45] [INFO] [Column 'Test Summary': top='Verify that the system shows an error message when the employee name is empty
+
+Precondition:
+1. User should have Application URL
+2. User should have valid login credentials
+3.User should be in Add Employee field', frequency=55] DataProcessor.clean_data.stats
+[2025-11-03 11:49:45] [INFO] [Column 'Test Steps': top='Open the browser, click on the URL', frequency=37] DataProcessor.clean_data.stats
+[2025-11-03 11:49:45] [INFO] [Column 'Test Data': top='Test Data', frequency=62] DataProcessor.clean_data.stats
+[2025-11-03 11:49:45] [INFO] [Column 'Expected Result': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=22] DataProcessor.clean_data.stats
+[2025-11-03 11:49:45] [INFO] [Column 'Unnamed: 7': top='Open the browser, click on the URL', frequency=51] DataProcessor.clean_data.stats
+[2025-11-03 11:49:45] [INFO] [Column 'Unnamed: 9': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=60] DataProcessor.clean_data.stats
+[2025-11-03 11:49:45] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-03 11:49:45] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-03 11:49:45] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-03 11:49:50] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-03 11:49:50] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-03 11:57:37] [INFO] [Column 'Step No': mean=2.10, std=1.03, min=1.0, max=4.0, median=2.00] DataProcessor.clean_data.stats
+[2025-11-03 11:57:37] [INFO] [Column 'Unnamed: 8': mean=nan, std=nan, min=nan, max=nan, median=nan] DataProcessor.clean_data.stats
+[2025-11-03 11:57:37] [INFO] [Column 'Test Case#': top='TC_01', frequency=47] DataProcessor.clean_data.stats
+[2025-11-03 11:57:37] [INFO] [Column 'Test Title': top='Test Title', frequency=46] DataProcessor.clean_data.stats
+[2025-11-03 11:57:37] [INFO] [Column 'Test Summary': top='Verify that the system shows an error message when the employee name is empty
+
+Precondition:
+1. User should have Application URL
+2. User should have valid login credentials
+3.User should be in Add Employee field', frequency=55] DataProcessor.clean_data.stats
+[2025-11-03 11:57:37] [INFO] [Column 'Test Steps': top='Open the browser, click on the URL', frequency=37] DataProcessor.clean_data.stats
+[2025-11-03 11:57:37] [INFO] [Column 'Test Data': top='Test Data', frequency=62] DataProcessor.clean_data.stats
+[2025-11-03 11:57:37] [INFO] [Column 'Expected Result': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=22] DataProcessor.clean_data.stats
+[2025-11-03 11:57:37] [INFO] [Column 'Unnamed: 7': top='Open the browser, click on the URL', frequency=51] DataProcessor.clean_data.stats
+[2025-11-03 11:57:37] [INFO] [Column 'Unnamed: 9': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=60] DataProcessor.clean_data.stats
+[2025-11-03 11:57:37] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-03 11:57:37] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-03 11:57:37] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-03 11:57:42] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-03 11:57:42] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-03 11:57:42] [INFO] [17 chart specs generated.] AnalyticsEngine.suggest_charts
+[2025-11-03 12:13:47] [INFO] [Column 'Step No': mean=2.10, std=1.03, min=1.0, max=4.0, median=2.00] DataProcessor.clean_data.stats
+[2025-11-03 12:13:47] [INFO] [Column 'Unnamed: 8': mean=nan, std=nan, min=nan, max=nan, median=nan] DataProcessor.clean_data.stats
+[2025-11-03 12:13:47] [INFO] [Column 'Test Case#': top='TC_01', frequency=47] DataProcessor.clean_data.stats
+[2025-11-03 12:13:47] [INFO] [Column 'Test Title': top='Test Title', frequency=46] DataProcessor.clean_data.stats
+[2025-11-03 12:13:47] [INFO] [Column 'Test Summary': top='Verify that the system shows an error message when the employee name is empty
+
+Precondition:
+1. User should have Application URL
+2. User should have valid login credentials
+3.User should be in Add Employee field', frequency=55] DataProcessor.clean_data.stats
+[2025-11-03 12:13:47] [INFO] [Column 'Test Steps': top='Open the browser, click on the URL', frequency=37] DataProcessor.clean_data.stats
+[2025-11-03 12:13:47] [INFO] [Column 'Test Data': top='Test Data', frequency=62] DataProcessor.clean_data.stats
+[2025-11-03 12:13:47] [INFO] [Column 'Expected Result': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=22] DataProcessor.clean_data.stats
+[2025-11-03 12:13:47] [INFO] [Column 'Unnamed: 7': top='Open the browser, click on the URL', frequency=51] DataProcessor.clean_data.stats
+[2025-11-03 12:13:47] [INFO] [Column 'Unnamed: 9': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=60] DataProcessor.clean_data.stats
+[2025-11-03 12:13:47] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-03 12:13:47] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-03 12:13:47] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-03 12:13:57] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-03 12:13:58] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-03 12:13:58] [INFO] [17 chart specs generated.] AnalyticsEngine.suggest_charts
+[2025-11-03 12:14:35] [INFO] [Rows=67, Columns=10] AnalyticsEngine.summarize
+[2025-11-03 12:14:35] [INFO] [Test Case#: 0] Missing Values
+[2025-11-03 12:14:35] [INFO] [Test Title: 0] Missing Values
+[2025-11-03 12:14:35] [INFO] [Test Summary: 0] Missing Values
+[2025-11-03 12:14:35] [INFO] [Step No: 0] Missing Values
+[2025-11-03 12:14:35] [INFO] [Test Steps: 0] Missing Values
+[2025-11-03 12:14:35] [INFO] [Test Data: 0] Missing Values
+[2025-11-03 12:14:35] [INFO] [Expected Result: 0] Missing Values
+[2025-11-03 12:14:35] [INFO] [Unnamed: 7: 0] Missing Values
+[2025-11-03 12:14:35] [INFO] [Unnamed: 8: 67] Missing Values
+[2025-11-03 12:14:35] [INFO] [Unnamed: 9: 0] Missing Values
+[2025-11-04 10:26:36] [INFO] [Column 'Step No': mean=2.10, std=1.03, min=1.0, max=4.0, median=2.00] DataProcessor.clean_data.stats
+[2025-11-04 10:26:36] [INFO] [Column 'Unnamed: 8': mean=nan, std=nan, min=nan, max=nan, median=nan] DataProcessor.clean_data.stats
+[2025-11-04 10:26:36] [INFO] [Column 'Test Case#': top='TC_01', frequency=47] DataProcessor.clean_data.stats
+[2025-11-04 10:26:36] [INFO] [Column 'Test Title': top='Test Title', frequency=46] DataProcessor.clean_data.stats
+[2025-11-04 10:26:36] [INFO] [Column 'Test Summary': top='Verify that the system shows an error message when the employee name is empty
+
+Precondition:
+1. User should have Application URL
+2. User should have valid login credentials
+3.User should be in Add Employee field', frequency=55] DataProcessor.clean_data.stats
+[2025-11-04 10:26:36] [INFO] [Column 'Test Steps': top='Open the browser, click on the URL', frequency=37] DataProcessor.clean_data.stats
+[2025-11-04 10:26:36] [INFO] [Column 'Test Data': top='Test Data', frequency=62] DataProcessor.clean_data.stats
+[2025-11-04 10:26:36] [INFO] [Column 'Expected Result': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=22] DataProcessor.clean_data.stats
+[2025-11-04 10:26:36] [INFO] [Column 'Unnamed: 7': top='Open the browser, click on the URL', frequency=51] DataProcessor.clean_data.stats
+[2025-11-04 10:26:36] [INFO] [Column 'Unnamed: 9': top='Application Login page should be displayed with Login Id, Password text boxes and a Submit button', frequency=60] DataProcessor.clean_data.stats
+[2025-11-04 10:26:36] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-04 10:26:36] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-04 10:26:36] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-04 10:34:21] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-04 10:34:21] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-04 10:34:21] [INFO] [17 chart specs generated.] AnalyticsEngine.suggest_charts
+[2025-11-04 10:35:41] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-04 10:35:41] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-04 10:35:41] [INFO] [17 chart specs generated.] AnalyticsEngine.suggest_charts
+[2025-11-04 10:54:06] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-04 10:54:06] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-04 10:54:06] [INFO] [17 chart specs generated.] AnalyticsEngine.suggest_charts
+[2025-11-04 10:54:20] [INFO] [Column 'Units_Sold': mean=26.60, std=8.03, min=15.0, max=40.0, median=26.50] DataProcessor.clean_data.stats
+[2025-11-04 10:54:20] [INFO] [Column 'Revenue': mean=7200.00, std=3743.14, min=3000.0, max=15000.0, median=6750.00] DataProcessor.clean_data.stats
+[2025-11-04 10:54:20] [INFO] [Column 'Product': top='Camera', frequency=1] DataProcessor.clean_data.stats
+[2025-11-04 10:54:20] [INFO] [Column 'Region': top='North', frequency=3] DataProcessor.clean_data.stats
+[2025-11-04 10:54:20] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-04 10:54:20] [INFO] [Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']] DataProcessor.analyze_columns
+[2025-11-04 10:54:20] [INFO] [Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']] DataProcessor.analyze_columns
+[2025-11-04 10:54:25] [INFO] [Columns analyzed: ['Test Case#', 'Test Title', 'Test Summary', 'Step No', 'Test Steps', 'Test Data', 'Expected Result', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']] DataProcessor.analyze_columns
+[2025-11-04 10:54:25] [INFO] [Detected data kinds: ['categorical', 'categorical', 'categorical', 'numeric', 'categorical', 'categorical', 'categorical', 'categorical', 'numeric', 'categorical']] DataProcessor.analyze_columns
+[2025-11-04 10:54:25] [INFO] [17 chart specs generated.] AnalyticsEngine.suggest_charts
+[2025-11-04 10:55:24] [INFO] [Column 'Units_Sold': mean=26.60, std=8.03, min=15.0, max=40.0, median=26.50] DataProcessor.clean_data.stats
+[2025-11-04 10:55:24] [INFO] [Column 'Revenue': mean=7200.00, std=3743.14, min=3000.0, max=15000.0, median=6750.00] DataProcessor.clean_data.stats
+[2025-11-04 10:55:24] [INFO] [Column 'Product': top='Camera', frequency=1] DataProcessor.clean_data.stats
+[2025-11-04 10:55:24] [INFO] [Column 'Region': top='North', frequency=3] DataProcessor.clean_data.stats
+[2025-11-04 10:55:24] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-04 10:55:24] [INFO] [Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']] DataProcessor.analyze_columns
+[2025-11-04 10:55:24] [INFO] [Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']] DataProcessor.analyze_columns
+[2025-11-04 10:56:13] [INFO] [Column 'Units_Sold': mean=26.60, std=8.03, min=15.0, max=40.0, median=26.50] DataProcessor.clean_data.stats
+[2025-11-04 10:56:13] [INFO] [Column 'Revenue': mean=7200.00, std=3743.14, min=3000.0, max=15000.0, median=6750.00] DataProcessor.clean_data.stats
+[2025-11-04 10:56:13] [INFO] [Column 'Product': top='Camera', frequency=1] DataProcessor.clean_data.stats
+[2025-11-04 10:56:13] [INFO] [Column 'Region': top='North', frequency=3] DataProcessor.clean_data.stats
+[2025-11-04 10:56:13] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-04 10:56:13] [INFO] [Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']] DataProcessor.analyze_columns
+[2025-11-04 10:56:13] [INFO] [Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']] DataProcessor.analyze_columns
+[2025-11-04 10:56:18] [INFO] [Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']] DataProcessor.analyze_columns
+[2025-11-04 10:56:18] [INFO] [Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']] DataProcessor.analyze_columns
+[2025-11-04 10:56:18] [INFO] [12 chart specs generated.] AnalyticsEngine.suggest_charts
+[2025-11-04 11:08:10] [INFO] [Column 'Units_Sold': mean=26.60, std=8.03, min=15.0, max=40.0, median=26.50] DataProcessor.clean_data.stats
+[2025-11-04 11:08:10] [INFO] [Column 'Revenue': mean=7200.00, std=3743.14, min=3000.0, max=15000.0, median=6750.00] DataProcessor.clean_data.stats
+[2025-11-04 11:08:10] [INFO] [Column 'Product': top='Camera', frequency=1] DataProcessor.clean_data.stats
+[2025-11-04 11:08:10] [INFO] [Column 'Region': top='North', frequency=3] DataProcessor.clean_data.stats
+[2025-11-04 11:08:10] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-04 11:08:10] [INFO] [Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']] DataProcessor.analyze_columns
+[2025-11-04 11:08:10] [INFO] [Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']] DataProcessor.analyze_columns
+[2025-11-04 11:08:15] [INFO] [Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']] DataProcessor.analyze_columns
+[2025-11-04 11:08:15] [INFO] [Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']] DataProcessor.analyze_columns
+[2025-11-04 11:08:24] [ERROR] [visual_by_analytical] 'AnalyticsEngine' object has no attribute 'suggest_charts'
+[2025-11-04 11:12:40] [INFO] [Column 'Units_Sold': mean=26.60, std=8.03, min=15.0, max=40.0, median=26.50] DataProcessor.clean_data.stats
+[2025-11-04 11:12:40] [INFO] [Column 'Revenue': mean=7200.00, std=3743.14, min=3000.0, max=15000.0, median=6750.00] DataProcessor.clean_data.stats
+[2025-11-04 11:12:40] [INFO] [Column 'Product': top='Camera', frequency=1] DataProcessor.clean_data.stats
+[2025-11-04 11:12:40] [INFO] [Column 'Region': top='North', frequency=3] DataProcessor.clean_data.stats
+[2025-11-04 11:12:40] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-04 11:12:40] [INFO] [Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']] DataProcessor.analyze_columns
+[2025-11-04 11:12:40] [INFO] [Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']] DataProcessor.analyze_columns
+[2025-11-04 11:12:46] [INFO] [Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']] DataProcessor.analyze_columns
+[2025-11-04 11:12:46] [INFO] [Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']] DataProcessor.analyze_columns
+[2025-11-04 11:12:50] [INFO] [✅ Generated 11 charts in output\analytical_20251104_111246] AnalyticsEngine.generate_and_save_charts
+[2025-11-04 11:44:40] [INFO] [Column 'Units_Sold': mean=26.60, std=8.03, min=15.0, max=40.0, median=26.50] DataProcessor.clean_data.stats
+[2025-11-04 11:44:40] [INFO] [Column 'Revenue': mean=7200.00, std=3743.14, min=3000.0, max=15000.0, median=6750.00] DataProcessor.clean_data.stats
+[2025-11-04 11:44:40] [INFO] [Column 'Product': top='Camera', frequency=1] DataProcessor.clean_data.stats
+[2025-11-04 11:44:40] [INFO] [Column 'Region': top='North', frequency=3] DataProcessor.clean_data.stats
+[2025-11-04 11:44:40] [INFO] [Data cleaned and stats logged successfully.] DataProcessor.clean_data
+[2025-11-04 11:44:40] [INFO] [Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']] DataProcessor.analyze_columns
+[2025-11-04 11:44:40] [INFO] [Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']] DataProcessor.analyze_columns
+[2025-11-04 11:44:44] [INFO] [Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']] DataProcessor.analyze_columns
+[2025-11-04 11:44:44] [INFO] [Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']] DataProcessor.analyze_columns
+[2025-11-04 11:44:48] [INFO] [✅ Generated 11 charts in output\analytical_20251104_114444] AnalyticsEngine.generate_and_save_charts
+[2025-11-04 11:44:48] [INFO] [11 charts logged successfully.] visual_by_analytical
+[2025-11-04 16:35:35] [INFO] [DataProcessor.clean_data.stats] Column 'Units_Sold': mean=26.60, std=8.03, min=15.0, max=40.0, median=26.50
+[2025-11-04 16:35:35] [INFO] [DataProcessor.clean_data.stats] Column 'Revenue': mean=7200.00, std=3743.14, min=3000.0, max=15000.0, median=6750.00
+[2025-11-04 16:35:35] [INFO] [DataProcessor.clean_data.stats] Column 'Product': top='Camera', frequency=1
+[2025-11-04 16:35:35] [INFO] [DataProcessor.clean_data.stats] Column 'Region': top='North', frequency=3
+[2025-11-04 16:35:35] [INFO] [DataProcessor.clean_data] Data cleaned and stats logged successfully.
+[2025-11-04 16:35:35] [INFO] [DataProcessor.analyze_columns] Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']
+[2025-11-04 16:35:35] [INFO] [DataProcessor.analyze_columns] Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']
+[2025-11-04 16:35:53] [INFO] [DataProcessor.analyze_columns] Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']
+[2025-11-04 16:35:53] [INFO] [DataProcessor.analyze_columns] Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']
+[2025-11-04 16:35:57] [INFO] [AnalyticsEngine.generate_and_save_charts] ✅ Generated 11 charts in output\analytical_20251104_163553
+[2025-11-04 16:35:57] [INFO] [visual_by_analytical] 11 charts logged successfully.
+[2025-11-04 16:45:12] [INFO] [DataProcessor.clean_data.stats] Column 'Units_Sold': mean=26.60, std=8.03, min=15.0, max=40.0, median=26.50
+[2025-11-04 16:45:12] [INFO] [DataProcessor.clean_data.stats] Column 'Revenue': mean=7200.00, std=3743.14, min=3000.0, max=15000.0, median=6750.00
+[2025-11-04 16:45:12] [INFO] [DataProcessor.clean_data.stats] Column 'Product': top='Camera', frequency=1
+[2025-11-04 16:45:12] [INFO] [DataProcessor.clean_data.stats] Column 'Region': top='North', frequency=3
+[2025-11-04 16:45:12] [INFO] [DataProcessor.clean_data] Data cleaned and stats logged successfully.
+[2025-11-04 16:45:12] [INFO] [DataProcessor.analyze_columns] Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']
+[2025-11-04 16:45:12] [INFO] [DataProcessor.analyze_columns] Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']
+[2025-11-04 16:47:10] [INFO] [DataProcessor.analyze_columns] Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']
+[2025-11-04 16:47:10] [INFO] [DataProcessor.analyze_columns] Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']
+[2025-11-04 16:47:17] [ERROR] [visual_by_analytical] 'AnalyticsEngine' object has no attribute 'generate_and_save_charts'
+[2025-11-04 16:47:18] [INFO] [DataProcessor.analyze_columns] Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']
+[2025-11-04 16:47:18] [INFO] [DataProcessor.analyze_columns] Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']
+[2025-11-04 16:47:20] [ERROR] [visual_by_analytical] 'AnalyticsEngine' object has no attribute 'generate_and_save_charts'
+[2025-11-04 16:47:25] [INFO] [DataProcessor.analyze_columns] Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']
+[2025-11-04 16:47:25] [INFO] [DataProcessor.analyze_columns] Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']
+[2025-11-04 16:47:27] [ERROR] [visual_by_analytical] 'AnalyticsEngine' object has no attribute 'generate_and_save_charts'
+[2025-11-04 16:50:02] [INFO] [Dashboard.generate_report] Report saved at output\numeric_report.json
+[2025-11-04 16:53:03] [INFO] [DataProcessor.clean_data.stats] Column 'Units_Sold': mean=26.60, std=8.03, min=15.0, max=40.0, median=26.50
+[2025-11-04 16:53:03] [INFO] [DataProcessor.clean_data.stats] Column 'Revenue': mean=7200.00, std=3743.14, min=3000.0, max=15000.0, median=6750.00
+[2025-11-04 16:53:03] [INFO] [DataProcessor.clean_data.stats] Column 'Product': top='Camera', frequency=1
+[2025-11-04 16:53:03] [INFO] [DataProcessor.clean_data.stats] Column 'Region': top='North', frequency=3
+[2025-11-04 16:53:03] [INFO] [DataProcessor.clean_data] Data cleaned and stats logged successfully.
+[2025-11-04 16:53:03] [INFO] [DataProcessor.analyze_columns] Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']
+[2025-11-04 16:53:03] [INFO] [DataProcessor.analyze_columns] Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']
+[2025-11-04 16:53:19] [INFO] [DataProcessor.analyze_columns] Columns analyzed: ['Date', 'Product', 'Region', 'Units_Sold', 'Revenue']
+[2025-11-04 16:53:19] [INFO] [DataProcessor.analyze_columns] Detected data kinds: ['datetime', 'categorical', 'categorical', 'numeric', 'numeric']
+[2025-11-04 16:53:19] [INFO] [Chart Saved] output\analytical_20251104_165319\line_Date.png
+[2025-11-04 16:53:20] [INFO] [Chart Saved] output\analytical_20251104_165319\bar_Product.png
+[2025-11-04 16:53:20] [INFO] [Chart Saved] output\analytical_20251104_165319\bar_Region.png
+[2025-11-04 16:53:20] [INFO] [Chart Saved] output\analytical_20251104_165319\hist_Units_Sold.png
+[2025-11-04 16:53:21] [INFO] [Chart Saved] output\analytical_20251104_165319\box_Units_Sold.png
+[2025-11-04 16:53:21] [INFO] [Chart Saved] output\analytical_20251104_165319\hist_Revenue.png
+[2025-11-04 16:53:22] [INFO] [Chart Saved] output\analytical_20251104_165319\box_Revenue.png
+[2025-11-04 16:53:22] [INFO] [Chart Saved] output\analytical_20251104_165319\scatter_Units_Sold_Revenue.png
+[2025-11-04 16:53:22] [INFO] [visual_by_analytical] 8 charts logged successfully.
+[2025-11-04 16:55:02] [INFO] [Dashboard.generate_report] Report saved at output\numeric_report.json

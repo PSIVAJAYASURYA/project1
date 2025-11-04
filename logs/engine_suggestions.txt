@@ -1,0 +1,221 @@
+
+
+[2025-11-02 21:28:57] Model: gemma3:4b
+⚠️ No response received from the local model.
+
+
+=== Analytical Engine Suggestions ===
+
+
+
+=== Analytical Engine Suggestions ===
+
+
+
+=== Analytical Engine Suggestions ===
+
+
+
+=== Analytical Engine Suggestions ===
+bar_top | Test Case# | Top categories counts
+bar_top | Test Title | Top categories counts
+bar | Test Summary | Categorical counts
+hist | Step No | Numeric distribution
+box | Step No | Outliers/Spread
+bar_top | Test Steps | Top categories counts
+bar | Test Data | Categorical counts
+bar_top | Expected Result | Top categories counts
+bar_top | Unnamed: 7 | Top categories counts
+hist | Unnamed: 8 | Numeric distribution
+box | Unnamed: 8 | Outliers/Spread
+bar | Unnamed: 9 | Categorical counts
+scatter | Step No, Unnamed: 8 | Correlation
+box_group | Step No, Test Case# | Numeric by category
+box_group | Step No, Test Summary | Numeric by category
+box_group | Unnamed: 8, Test Case# | Numeric by category
+box_group | Unnamed: 8, Test Summary | Numeric by category
+
+
+=== Analytical Engine Suggestions ===
+bar_top | Test Case# | Top categories counts
+bar_top | Test Title | Top categories counts
+bar | Test Summary | Categorical counts
+hist | Step No | Numeric distribution
+box | Step No | Outliers/Spread
+bar_top | Test Steps | Top categories counts
+bar | Test Data | Categorical counts
+bar_top | Expected Result | Top categories counts
+bar_top | Unnamed: 7 | Top categories counts
+hist | Unnamed: 8 | Numeric distribution
+box | Unnamed: 8 | Outliers/Spread
+bar | Unnamed: 9 | Categorical counts
+scatter | Step No, Unnamed: 8 | Correlation
+box_group | Step No, Test Case# | Numeric by category
+box_group | Step No, Test Summary | Numeric by category
+box_group | Unnamed: 8, Test Case# | Numeric by category
+box_group | Unnamed: 8, Test Summary | Numeric by category
+
+
+=== Analytical Engine Suggestions ===
+bar_top | Test Case# | Top categories counts
+bar_top | Test Title | Top categories counts
+bar | Test Summary | Categorical counts
+hist | Step No | Numeric distribution
+box | Step No | Outliers/Spread
+bar_top | Test Steps | Top categories counts
+bar | Test Data | Categorical counts
+bar_top | Expected Result | Top categories counts
+bar_top | Unnamed: 7 | Top categories counts
+hist | Unnamed: 8 | Numeric distribution
+box | Unnamed: 8 | Outliers/Spread
+bar | Unnamed: 9 | Categorical counts
+scatter | Step No, Unnamed: 8 | Correlation
+box_group | Step No, Test Case# | Numeric by category
+box_group | Step No, Test Summary | Numeric by category
+box_group | Unnamed: 8, Test Case# | Numeric by category
+box_group | Unnamed: 8, Test Summary | Numeric by category
+
+
+=== Analytical Engine Suggestions ===
+bar_top | Test Case# | Top categories counts
+bar_top | Test Title | Top categories counts
+bar | Test Summary | Categorical counts
+hist | Step No | Numeric distribution
+box | Step No | Outliers/Spread
+bar_top | Test Steps | Top categories counts
+bar | Test Data | Categorical counts
+bar_top | Expected Result | Top categories counts
+bar_top | Unnamed: 7 | Top categories counts
+hist | Unnamed: 8 | Numeric distribution
+box | Unnamed: 8 | Outliers/Spread
+bar | Unnamed: 9 | Categorical counts
+scatter | Step No, Unnamed: 8 | Correlation
+box_group | Step No, Test Case# | Numeric by category
+box_group | Step No, Test Summary | Numeric by category
+box_group | Unnamed: 8, Test Case# | Numeric by category
+box_group | Unnamed: 8, Test Summary | Numeric by category
+
+
+=== Analytical Engine Suggestions ===
+bar_top | Test Case# | Top categories counts
+bar_top | Test Title | Top categories counts
+bar | Test Summary | Categorical counts
+hist | Step No | Numeric distribution
+box | Step No | Outliers/Spread
+bar_top | Test Steps | Top categories counts
+bar | Test Data | Categorical counts
+bar_top | Expected Result | Top categories counts
+bar_top | Unnamed: 7 | Top categories counts
+hist | Unnamed: 8 | Numeric distribution
+box | Unnamed: 8 | Outliers/Spread
+bar | Unnamed: 9 | Categorical counts
+scatter | Step No, Unnamed: 8 | Correlation
+box_group | Step No, Test Case# | Numeric by category
+box_group | Step No, Test Summary | Numeric by category
+box_group | Unnamed: 8, Test Case# | Numeric by category
+box_group | Unnamed: 8, Test Summary | Numeric by category
+
+
+=== Analytical Engine Suggestions ===
+bar_top | Test Case# | Top categories counts
+bar_top | Test Title | Top categories counts
+bar | Test Summary | Categorical counts
+hist | Step No | Numeric distribution
+box | Step No | Outliers/Spread
+bar_top | Test Steps | Top categories counts
+bar | Test Data | Categorical counts
+bar_top | Expected Result | Top categories counts
+bar_top | Unnamed: 7 | Top categories counts
+hist | Unnamed: 8 | Numeric distribution
+box | Unnamed: 8 | Outliers/Spread
+bar | Unnamed: 9 | Categorical counts
+scatter | Step No, Unnamed: 8 | Correlation
+box_group | Step No, Test Case# | Numeric by category
+box_group | Step No, Test Summary | Numeric by category
+box_group | Unnamed: 8, Test Case# | Numeric by category
+box_group | Unnamed: 8, Test Summary | Numeric by category
+
+
+=== Analytical Engine Suggestions ===
+bar_top | Test Case# | Top categories counts
+bar_top | Test Title | Top categories counts
+bar | Test Summary | Categorical counts
+hist | Step No | Numeric distribution
+box | Step No | Outliers/Spread
+bar_top | Test Steps | Top categories counts
+bar | Test Data | Categorical counts
+bar_top | Expected Result | Top categories counts
+bar_top | Unnamed: 7 | Top categories counts
+hist | Unnamed: 8 | Numeric distribution
+box | Unnamed: 8 | Outliers/Spread
+bar | Unnamed: 9 | Categorical counts
+scatter | Step No, Unnamed: 8 | Correlation
+box_group | Step No, Test Case# | Numeric by category
+box_group | Step No, Test Summary | Numeric by category
+box_group | Unnamed: 8, Test Case# | Numeric by category
+box_group | Unnamed: 8, Test Summary | Numeric by category
+
+
+=== Analytical Engine Suggestions ===
+line_time | Date | Time trend
+bar | Product | Categorical counts
+bar | Region | Categorical counts
+hist | Units_Sold | Numeric distribution
+box | Units_Sold | Outliers/Spread
+hist | Revenue | Numeric distribution
+box | Revenue | Outliers/Spread
+scatter | Units_Sold, Revenue | Correlation
+box_group | Units_Sold, Product | Numeric by category
+box_group | Units_Sold, Region | Numeric by category
+box_group | Revenue, Product | Numeric by category
+box_group | Revenue, Region | Numeric by category
+
+=== Analytical Engine Suggestions ===
+✅ Saved: output\analytical_20251104_114444\hist_Units_Sold.png
+✅ Saved: output\analytical_20251104_114444\box_Units_Sold.png
+✅ Saved: output\analytical_20251104_114444\hist_Revenue.png
+✅ Saved: output\analytical_20251104_114444\box_Revenue.png
+✅ Saved: output\analytical_20251104_114444\bar_Product_Units_Sold.png
+✅ Saved: output\analytical_20251104_114444\bar_Product_Revenue.png
+✅ Saved: output\analytical_20251104_114444\bar_Region_Units_Sold.png
+✅ Saved: output\analytical_20251104_114444\bar_Region_Revenue.png
+✅ Saved: output\analytical_20251104_114444\scatter_Units_Sold_Revenue.png
+✅ Saved: output\analytical_20251104_114444\line_Date_Units_Sold.png
+✅ Saved: output\analytical_20251104_114444\line_Date_Revenue.png
+
+
+=== Analytical Engine Suggestions ===
+✅ Saved: output\analytical_20251104_163553\hist_Units_Sold.png
+✅ Saved: output\analytical_20251104_163553\box_Units_Sold.png
+✅ Saved: output\analytical_20251104_163553\hist_Revenue.png
+✅ Saved: output\analytical_20251104_163553\box_Revenue.png
+✅ Saved: output\analytical_20251104_163553\bar_Product_Units_Sold.png
+✅ Saved: output\analytical_20251104_163553\bar_Product_Revenue.png
+✅ Saved: output\analytical_20251104_163553\bar_Region_Units_Sold.png
+✅ Saved: output\analytical_20251104_163553\bar_Region_Revenue.png
+✅ Saved: output\analytical_20251104_163553\scatter_Units_Sold_Revenue.png
+✅ Saved: output\analytical_20251104_163553\line_Date_Units_Sold.png
+✅ Saved: output\analytical_20251104_163553\line_Date_Revenue.png
+
+
+
+=== Analytical Engine — 20251104_165319 ===
+✅ Saved: output\analytical_20251104_165319\line_Date.png
+✅ Saved: output\analytical_20251104_165319\bar_Product.png
+✅ Saved: output\analytical_20251104_165319\bar_Region.png
+✅ Saved: output\analytical_20251104_165319\hist_Units_Sold.png
+✅ Saved: output\analytical_20251104_165319\box_Units_Sold.png
+✅ Saved: output\analytical_20251104_165319\hist_Revenue.png
+✅ Saved: output\analytical_20251104_165319\box_Revenue.png
+✅ Saved: output\analytical_20251104_165319\scatter_Units_Sold_Revenue.png
+
+=== Analytical Engine Suggestions ===
+✅ Saved: output\analytical_20251104_165319\line_Date.png
+✅ Saved: output\analytical_20251104_165319\bar_Product.png
+✅ Saved: output\analytical_20251104_165319\bar_Region.png
+✅ Saved: output\analytical_20251104_165319\hist_Units_Sold.png
+✅ Saved: output\analytical_20251104_165319\box_Units_Sold.png
+✅ Saved: output\analytical_20251104_165319\hist_Revenue.png
+✅ Saved: output\analytical_20251104_165319\box_Revenue.png
+✅ Saved: output\analytical_20251104_165319\scatter_Units_Sold_Revenue.png
+

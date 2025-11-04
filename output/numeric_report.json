@@ -1,0 +1,18 @@
+{
+    "Units_Sold": {
+        "mean": 26.6,
+        "median": 26.5,
+        "min": 15.0,
+        "max": 40.0,
+        "std_dev": 8.030497424748289,
+        "missing_values": 0
+    },
+    "Revenue": {
+        "mean": 7200.0,
+        "median": 6750.0,
+        "min": 3000.0,
+        "max": 15000.0,
+        "std_dev": 3743.1418769679453,
+        "missing_values": 0
+    }
+}

@@ -38,6 +38,11 @@ class DataProcessor:
                     "unique": unique,
                     "sample_values": series.dropna().astype(str).unique()[:5].tolist(),
                 }
+
+            # ✅ Log basic structure summary
+            self.logger.log_info("DataProcessor.analyze_columns", f"Columns analyzed: {list(df.columns)}")
+            self.logger.log_info("DataProcessor.analyze_columns", f"Detected data kinds: {[info[c]['kind'] for c in info]}")
+
             return info
 
         except Exception as e:
@@ -45,7 +50,7 @@ class DataProcessor:
             return {}
 
     def clean_data(self, df):
-        """Clean dataset: trim strings, detect numeric, fill missing."""
+        """Clean dataset: trim strings, detect numeric, fill missing, log stats."""
         try:
             df = df.copy()
             df = df.drop_duplicates(ignore_index=True)
@@ -85,6 +90,24 @@ class DataProcessor:
                         df[col] = df[col].fillna(mode.iloc[0])
                     else:
                         df[col] = df[col].fillna("UNKNOWN")
+
+            # ✅ Log statistical summary
+            stats_log = []
+            numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
+            for col in numeric_cols:
+                col_stats = df[col].describe().to_dict()
+                stats_log.append(f"Column '{col}': mean={col_stats.get('mean'):.2f}, std={col_stats.get('std'):.2f}, min={col_stats.get('min')}, max={col_stats.get('max')}, median={df[col].median():.2f}")
+
+            categorical_cols = df.select_dtypes(include=["object"]).columns.tolist()
+            for col in categorical_cols:
+                top_val = df[col].mode()[0] if not df[col].mode().empty else "N/A"
+                freq = df[col].value_counts().head(1).values[0] if not df[col].value_counts().empty else 0
+                stats_log.append(f"Column '{col}': top='{top_val}', frequency={freq}")
+
+            for entry in stats_log:
+                self.logger.log_info("DataProcessor.clean_data.stats", entry)
+
+            self.logger.log_info("DataProcessor.clean_data", "Data cleaned and stats logged successfully.")
 
             return df
 
